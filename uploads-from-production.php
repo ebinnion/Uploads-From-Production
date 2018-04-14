@@ -19,7 +19,13 @@
  */
 
 class Uploads_From_Production {
-	static $instance = null;
+
+	/**
+	 * Holds the singleton instance of the Uploads_From_Production class.
+	 *
+	 * @var Uploads_From_Production
+	 */
+	private static $instance = null;
 
 	public static function instance() {
 		if ( is_null( self::$instance ) ) {

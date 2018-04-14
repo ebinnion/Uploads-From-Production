@@ -27,6 +27,12 @@ class Uploads_From_Production {
 	 */
 	private static $instance = null;
 
+	/**
+	 * Enforces the singleton pattern by returning the existing instance if it exists
+	 * or creating it and then returning.
+	 *
+	 * @return Uploads_From_Production
+	 */
 	public static function instance() {
 		if ( is_null( self::$instance ) ) {
 			self::$instance = new Uploads_From_Production();
